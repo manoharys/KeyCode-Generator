@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-UI {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: white;
+    font-weight: 100;
+}
+
+.upper-UI h1 {
+
+    padding: 1rem;
+    background-color: rgba(54, 151, 230, 0.048);
+    cursor: pointer;
+    outline: none;
+    transition: all .5s ease;
+    width: 20rem;
+    text-align: center;
+}
+
+.upper-UI h1:hover {
+    background-color: rgba(8, 8, 8, 0.308);
+    transform: scale(1.1);
+}
+
+.lower-UI {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-UI .box {
+    border: 1px solid rgb(245, 92, 3);
+    padding-top: 0;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+    margin: 3rem;
+    width: 25rem;
+    text-align: center;
+    color: rgb(241, 238, 235);
+    letter-spacing: 2px;
+    background-color: rgba(54, 151, 230, 0.041);
+    transition: all .4s ease;
+}
+
+.lower-UI .box:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.code {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-top: 25px;
+}
