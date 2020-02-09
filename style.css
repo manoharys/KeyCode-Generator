@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Reenie+Beanie|Roboto&display=swap');
 
 * {
     margin: 0;
@@ -16,6 +16,12 @@
     background-position: center top;
     display: flex;
     flex-direction: column;
+}
+
+.title {
+    font-family: 'Reenie Beanie', cursive;
+    text-align: center;
+    font-size: 5rem;
 }
 
 .upper-UI {
@@ -42,15 +48,18 @@
 
 .upper-UI h1:hover {
     background-color: rgba(8, 8, 8, 0.308);
-    transform: scale(1.1);
+    transform: scale(1.123);
 }
 
 .lower-UI {
     height: 50vh;
     width: 100%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
+    background-color: rgba(79, 206, 107, 0.082);
 }
 
 .lower-UI .box {
@@ -69,7 +78,7 @@
 }
 
 .lower-UI .box:hover {
-    transform: scale(1.08);
+    transform: scale(1.123);
     cursor: pointer;
 }
 
