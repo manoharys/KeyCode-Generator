@@ -9,7 +9,8 @@ let upperUI = document.getElementById('UI');
 })();
 
 //setting the info text to hidden when users presses a key
-document.addEventListener('keypress', function () {
+document.addEventListener('keypress', function (event) {
+    event.preventDefault();
     document.getElementById('text').style.display = 'none';
 });
 
@@ -20,6 +21,7 @@ eventListeners();
 
 function eventListeners() {
     let eventListners = document.addEventListener('keypress', function (event) {
+        event.preventDefault();
         key.innerHTML = event.key;
         keyCode.innerHTML = event.keyCode;
         keyLocation.innerHTML = event.location;
